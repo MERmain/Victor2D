@@ -14,6 +14,12 @@ public class Controller : MonoBehaviour {
         Player = new Player();
         Header.Init();
 	}
+
+    public void UpdateHeader()
+    {
+        Debug.Log(Player.Money);
+        Header.Init();
+    }
 	
 
 	void Update () {

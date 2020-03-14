@@ -11,5 +11,12 @@ public class GameHelper
         return player;
     }
 
-	
+    public Controller GetController()
+    {
+        var Component = GameObject.FindGameObjectWithTag("GameController");
+        var controller = Component.GetComponent<Controller>();
+        return controller;
+    }
+
+
 }
